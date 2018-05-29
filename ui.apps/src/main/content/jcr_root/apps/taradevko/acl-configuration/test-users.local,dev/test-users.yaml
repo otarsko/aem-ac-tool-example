@@ -1,0 +1,16 @@
+- user_config:
+
+    - test-content-viewer:
+        - name: "Test Content Viewer"
+          isMemberOf: group-taradevko-content-viewer
+          password: test-contntent-viewer
+          path: /home/users/taradevko/test
+          preferencesContent: <jcr:root jcr:primaryType="nt:unstructured" cq.authoring.editor.page.showOnboarding620="false" cq.authoring.editor.page.showOnboarding62="false" granite.shell.showonboarding620="false"/>
+
+    - test-project-viewer:
+        - name: "Test Project Viewer"
+          isMemberOf: group-taradevko-project-viewer
+          password: test-contntent-viewer
+          path: /home/users/taradevko/test
+          preferencesContent: <jcr:root jcr:primaryType="nt:unstructured" cq.authoring.editor.page.showOnboarding620="false" cq.authoring.editor.page.showOnboarding62="false" granite.shell.showonboarding620="false"/>
+

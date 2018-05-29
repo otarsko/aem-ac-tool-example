@@ -1,0 +1,13 @@
+# All roles are defined here
+
+- group_config:
+
+  - group-taradevko-project-viewer:
+
+    - path: /home/groups/taradevko
+      isMemberOf: fragment-restrict-basic,fragment-allow-basic,contributor,fragment-projects
+
+  - group-taradevko-content-viewer:
+
+    - path: /home/groups/taradevko
+      isMemberOf: fragment-restrict-basic,fragment-allow-basic,contributor,fragment-weretail

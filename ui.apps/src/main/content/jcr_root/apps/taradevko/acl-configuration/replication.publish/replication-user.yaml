@@ -1,0 +1,17 @@
+- user_config:
+
+    - replicationReceiver:
+
+        - name: "Section A replication receiver"
+          password: "{c8e4c8f496979cced14e3334b90d9bf6ef2dbb5b064127ac8881f072656124691a55582b40ed83849dcc67a07f0a7ed8}"
+          path: /home/users/taradevko/replication
+
+- ace_config:
+
+    - replicationReceiver:
+
+        - FOR replicationPath IN [ /content/section_a, /etc/tags/seaction_a ]:
+
+              - path: ${replicationPath}
+                permission: allow
+                privileges: jcr:all

@@ -1,0 +1,14 @@
+#allow - content access related fragments
+- group_config:
+
+  - fragment-weretail:
+
+    - path: /home/groups/taradevko/fragments
+
+- ace_config:
+
+  - fragment-weretail:
+
+    - path: /content/we-retail
+      permission: allow
+      actions: read

@@ -1,0 +1,7 @@
+- user_config:
+
+    - service-a-user:
+        - name: "System user for We-Retail content"
+          isMemberOf: fragment-weretail
+          path: /home/users/system/taradevko
+          isSystemUser: "true"

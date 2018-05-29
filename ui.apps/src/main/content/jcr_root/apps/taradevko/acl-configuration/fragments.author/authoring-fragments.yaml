@@ -1,0 +1,22 @@
+# fragments which provides access to certain features
+- group_config:
+
+  - fragment-projects:
+
+    - path: /home/groups/taradevko/fragments
+
+- ace_config:
+
+  - fragment-projects:
+
+    - path: /libs/cq/core/content/nav/projects
+      permission: allow
+      actions: read
+
+    - path: /libs/cq/core/content/projects
+      permission: allow
+      actions: read
+
+    - path: /content/projects
+      permission: allow
+      actions: read

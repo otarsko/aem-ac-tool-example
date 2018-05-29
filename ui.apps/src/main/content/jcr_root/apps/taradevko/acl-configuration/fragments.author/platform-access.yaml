@@ -1,0 +1,52 @@
+- group_config:
+
+  - fragment-restrict-basic:
+
+    - path: /home/groups/taradevko/fragments
+
+  - fragment-allow-basic:
+
+    - path: /home/groups/taradevko/fragments
+
+- ace_config:
+
+  - fragment-restrict-basic:
+
+    # Restrict access to the content
+
+    - path: /content
+      permission: deny
+      actions:
+      privileges: jcr:read,jcr:readAccessControl
+      repGlob:
+
+    - path: /content
+      permission: allow
+      actions:
+      privileges: jcr:read,jcr:readAccessControl
+      repGlob: ""
+
+    - path: /content
+      permission: allow
+      actions:
+      privileges: jcr:read,jcr:readAccessControl
+      repGlob: /jcr:*
+
+    # Here you may want to disable access to all the main editing consoles and content.
+    # For demonstration purposes we just disable it for Projects console
+
+    - path: /libs/cq/core/content/nav/projects
+      permission: deny
+      actions: read
+
+    - path: /libs/cq/core/content/projects
+      permission: deny
+      actions: read
+
+    - path: /content/projects
+      permission: deny
+      actions: read
+
+#   - fragment-allow-basic:
+#     Here you may want to allow basic to the platform, e.g. /libs, /var and default design.
+
